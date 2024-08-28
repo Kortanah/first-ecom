@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Route,Routes,Link} from "react-router-dom";
+import Nav from './Nav';
+import Home from './Home';
+import Favorate from './Favorate';
+import FavorateCard from './FavorateCard';
+import Products from './product';
+import ProductData from "./productData";
+import ProductCart from "./ProductCart";
+import ProductDetails from './ProductDetails';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <>
+    <ProductData>
+    <Router>
+       <Nav />
+    
+        <Routes>
+     
+            <Route exact path='/' element={ <Home />} />
+            <Route path="/favorate" element={<Favorate />} />
+            <Route path="/product/:id" element={<ProductDetails/>} />
+            <Route path="/productcart" element={<ProductCart/>} />
+          
+            
+          </Routes>
+      
+    
+    </Router>
+    </ProductData>
+    </>
   );
 }
 

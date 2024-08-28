@@ -1,0 +1,57 @@
+.hero {
+    background-color: #222222;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  
+  .hero-title {
+    color:#fbfbfb;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  
+  .hero-description {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .hero-btn{
+    padding: 20px;
+  }
+  
+  .hero-btn button{
+    margin: 10px;
+  }
+  
+  .brands-logos{
+    padding: 20px;
+    font-size: 2rem;
+    color: rgb(181, 181, 181);
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-img-con{
+   height: 100px;
+   margin-bottom: 90px;
+   display: flex;
+   justify-content: center;
+   }
+
+ .hero-img{
+
+ width: 100%;
+ }
+
+ .hero-img img{
+  left: 20px;
+  width: 90%;
+
+ }
+
